@@ -1,4 +1,4 @@
-# My custom fork of z-loadscreen
+# My custom loadscreen
 
 ![alt-text](https://github.com/L1Pritchard/WBC-Loading-Screen/blob/main/ss/ss1.png)
 
