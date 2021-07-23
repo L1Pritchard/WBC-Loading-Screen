@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="config.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+	.list>li {
+            padding: 10px;
+            min-height: 2.8em;
+            text-align: center;
+            text-overflow: elipses;
+            white-space: normal;
+            overflow: hidden;
+			text-color: ##ede7f6;
+    }
+	
+	h1, h2, h3, h4 {
+            font-weight: 400 !important;
+            background: -webkit-linear-gradient(white, #586069);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+	
+	.list>li:nth-child(even) {
+            background-color: rgb(25, 25, 25, 0.75);
+    }
+
+    .list>li:nth-child(odd) {
+            background-color: rgb(30, 30, 30, 0.75);
+    }
+</style>
+
+<body>
+
+    <div class='blur' id="bg">
+        <!-- ADD your background images here (same format) and make sure to add it in __resource.lua  -->
+    </div>
+	<div class="valign-wrapper" id="keys">
+			<div class="container" style="clear: both; width: 100%; z-index: 5">
+				<div class="row">
+					<div class="col s4 offset-s2">
+						<div class="icon-block">
+							<h3 class="center animate__animated animate__delay-2s animate__backInUp"><i class="material-icons medium">keyboard</i></h3>
+						</div>
+						<h4 class="center-align animate__animated animate__delay-2s animate__backInUp">Controls</h4>
+						<div class="z-depth-5 animate__animated animate__delay-2s animate__backInUp">
+							<ul class="list" id="controlsList"></ul>
+						</div>
+					</div>
+
+					<div class="col s4">
+						<div class="icon-block">
+							<h3 class="center animate__animated animate__delay-2s animate__backInUp"><i class="material-icons medium">star_rate</i></h3>
+						</div>
+						<h4 class="center-align animate__animated animate__delay-2s animate__backInUp">Features</h4>
+						<div class="z-depth-5 animate__animated animate__delay-2s animate__backInUp">
+							<ul class="list" id="featuresList"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div id="blur" class="animated fadeInHalf delay-1s"></div>
+    <p id="header" class="animated fadeInRight delay-2s"></p>
+	<p id="text" class="animated fadeInRight delay-2s"></p>
+	<p id="credit" class="animated fadeInHalf delay-5s"></p>
+    <h2 id="title"></h2>
+    <!-- Your logo below -->
+    <img class="logo animated fadeInRightBig" id="logo" src="imgs/logo.png">
+    <br>
+    <div class="loadbar animated fadeInUp delay-2s">
+        <div class="yeet"></div>
+    </div>
+	
+	<script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            //Controls & Features stuff
+            const controlsList = document.getElementById('controlsList');
+            for (let i = 0; i < config.controls.length; i++) {
+                const item = document.createElement('li');
+                item.innerHTML = `<div class="key">${config.controls[i].key}</div>&nbsp; ${config.controls[i].desc}`;
+                controlsList.appendChild(item)
+            }
+
+            const featuresList = document.getElementById('featuresList');
+            for (let i = 0; i < config.features.length; i++) {
+                const item = document.createElement('li');
+                item.textContent = config.features[i];
+                featuresList.appendChild(item)
+            }
+        });
+    </script>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>
