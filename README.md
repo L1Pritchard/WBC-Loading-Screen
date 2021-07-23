@@ -1,16 +1,11 @@
-# z-loadscreen: A Decent Looking Loading Screen.
-My custom fork of **z-loadscreen**...
+# My custom fork of z-loadscreen
 
-![alt-text](https://github.com/How-Bout-No/z-loadscreen/blob/master/ss/ss1.png)
+![alt-text](https://github.com/L1Pritchard/WBC-Loading-Screen/tree/main/ss/ss1.png)
 
-## __What's New?__
-* Added an Info Section
-* Made Switching From Logo to Plaintext Much Simpler
 ## __Installation__
-1. Download [Here](https://github.com/How-Bout-No/z-loadscreen/archive/master.zip).
-2. Add `start z-loadscreen` to your server.cfg
- ## __Preview__
- https://youtu.be/fQqR_QEaXQQ
+1. Download [Here](https://github.com/L1Pritchard/WBC-Loading-Screen/archive/refs/tags/V0.2.zip).
+2. Add `start WBC-Loading-Screen` to your server.cfg
+
 ## __Configuration__
 
 | *To Configure* | *How-To* |
@@ -31,6 +26,7 @@ My custom fork of **z-loadscreen**...
 | **Background Color** *(The color that the image fades out to)* | `Config.css` - Change var **--fadeTo-Color** (hash color) [What is a Hash Color?](http://www.color-hex.com/ "What is a Hash Color?") |
 | **Header Color** | `Config.css` - Change var **--header-font-color** (hash color) [What is a Hash Color?](http://www.color-hex.com/ "What is a Hash Color?") |
 | **Text Color** | `Config.css` - Change var **--text-font-color** (hash color) [What is a Hash Color?](http://www.color-hex.com/ "What is a Hash Color?") |
+| **COMPLETE THIS PROPERLY** | |
 
 
 `config.js`
@@ -39,14 +35,32 @@ var config = {
 "transitionInterval": 1250,
 "imgInterval": 8000,
 "music": true,
-"videoID": "jo4-FhqkNwQ",
+"videoID": "Dc1OQ8hlog0",
+"musicVolume": 15,
 "useLogo": true;
 "text": {
-	"logotext": "My Arpee Server",
-	"title": "Header",
-	"text": "Text",
+	"logotext": "Header",
+	"title": "",
+	"text": "This is some sample text... I think I need to make something up about how awesome the server will be... um... hello?",
 },
-"images": ['bg0.png', 'bg1.png', 'bg2.png', 'bg3.png', 'bg4.png', 'bg5.png', 'bg6.png', 'bg7.png']
+"images": ['bg0.png', 'bg1.png', 'bg2.png', 'bg3.png', 'bg4.png', 'bg5.png', 'bg6.png', 'bg7.png'],
+controls: [
+        {key:'F1', desc: 'Phone'},
+        {key:'F2', desc: 'Inventory'},
+        {key:'F3', desc: 'EasyAdmin'},
+        {key:'F6', desc: 'Job menu'},
+        {key:'F7', desc: 'Billing menu'},
+        {key:'SHIFT', desc: 'Drift'},
+    ],
+    features: [
+        "Extendable",
+        "13 jobs",
+        "Vehicle / Weapon / Clothe / Barber shops",
+        "ESX Drugs / HoldUp",
+        "GCPhone",
+        "EasyAdmin",
+    ],
+	"credit": "Loading Screen by Stonemercy",
 }
 ```
 ---
@@ -74,15 +88,9 @@ var config = {
 - Presence of Music
 - The Transition Intervals
 - Header + text info color
+- COMPLETE THIS TOO
+
 ## __Support__
-You can either open a new issue or contact me on Discord: `How Bout No#7581`
-
-If you want help for the *original* [z-loadscreen](https://github.com/ThatZiv/z-loadscreen), ThatZiv has a [Discord Server](https://discord.gg/yWddFpQ) for support.
-
-## __Screenshots__
-![alt-text](https://github.com/How-Bout-No/z-loadscreen/blob/master/ss/ss2.png?raw=true)
-![alt-text](https://github.com/How-Bout-No/z-loadscreen/blob/master/ss/ss3.png?raw=true)
-![alt-text](https://github.com/How-Bout-No/z-loadscreen/blob/master/ss/ss1.png?raw=true)
-
+You can either open a new issue or contact me on Discord: `Stonemercy#0001`
 
 -------

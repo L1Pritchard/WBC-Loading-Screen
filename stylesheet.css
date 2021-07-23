@@ -8,7 +8,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: var(--fadeTo-Color);
-	overflow: auto;
+	overflow: hidden;
 }
 
 .blur {
@@ -58,7 +58,7 @@ body {
 	left: 1%;
 	bottom: 60px;
 
-    overflow: auto;
+    overflow: hidden;
 
     position: absolute;
   
