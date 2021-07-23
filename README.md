@@ -1,6 +1,6 @@
 # My custom fork of z-loadscreen
 
-![alt-text](https://github.com/L1Pritchard/WBC-Loading-Screen/tree/main/ss/ss1.png)
+![alt-text](https://github.com/L1Pritchard/WBC-Loading-Screen/blob/main/ss/ss1.png)
 
 ## __Installation__
 1. Download [Here](https://github.com/L1Pritchard/WBC-Loading-Screen/archive/refs/tags/V0.2.zip).
@@ -51,16 +51,16 @@ controls: [
         {key:'F6', desc: 'Job menu'},
         {key:'F7', desc: 'Billing menu'},
         {key:'SHIFT', desc: 'Drift'},
-    ],
-    features: [
+],
+features: [
         "Extendable",
         "13 jobs",
         "Vehicle / Weapon / Clothe / Barber shops",
         "ESX Drugs / HoldUp",
         "GCPhone",
         "EasyAdmin",
-    ],
-	"credit": "Loading Screen by Stonemercy",
+],
+"credit": "Loading Screen by Stonemercy",
 }
 ```
 ---
