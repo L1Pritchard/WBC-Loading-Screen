@@ -96,6 +96,6 @@ You can either open a new issue or contact me on Discord: `Stonemercy#0001`
 -------
 
 ## __Credits__
-- Logo by [Shinotama](https://twitch.tv/shinotama)
+- Logo by [Shinotama](https://shinotama.co.uk)
 - Keybinds and features from [PlumeESX](https://github.com/tabarra/PlumeESX-recipe)
 - Other features from [z-loadscreen](https://github.com/ThatZiv/z-loadscreen)

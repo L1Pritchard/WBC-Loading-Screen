@@ -17,11 +17,12 @@ body {
 }
 
 .logo {
-    height: 566px;
+    height: 400px;
     width: 400px;
 	position: absolute;
-	bottom: 48%;
+	top: 2%;
 	right: 12%;
+	object-fit: cover;
 }
 
 .key {
