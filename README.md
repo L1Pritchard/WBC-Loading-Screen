@@ -4,7 +4,8 @@
 
 ## __Installation__
 1. Download [Here](https://github.com/L1Pritchard/WBC-Loading-Screen/archive/refs/tags/V0.2.zip).
-2. Add `start WBC-Loading-Screen` to your server.cfg
+2. Change the folder name to `WBC-Loading-Screen`
+3. Add `start WBC-Loading-Screen` to your server.cfg
 
 ## __Configuration__
 
