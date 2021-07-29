@@ -1,8 +1,12 @@
+-- Resource Metadata
+fx_version 'cerulean'
+games { 'gta5' }
 
-resource_manifest_version '77731fab-63ca-442c-a67b-abc70f28dfa5'
+author 'Stonemercy'
+description 'Loading screen for WBC'
+version '0.3.4'
 
 loadscreen 'index.html'
-
 
 files {
     'index.html',
